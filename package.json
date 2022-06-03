@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OC project3",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SALOMEZ-Gwenaelle/ohmyfood.git"
+  },
+  "author": "Gwenaelle Salomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SALOMEZ-Gwenaelle/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/SALOMEZ-Gwenaelle/ohmyfood#readme"
+}

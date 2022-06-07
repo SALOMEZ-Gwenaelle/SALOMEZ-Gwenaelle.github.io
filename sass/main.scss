@@ -1,4 +1,6 @@
 //1 Utils
+@import "./Utils/imports";
+@import "./Utils/variables";
 
 //2 Base
 @import "./Base/normalize"; 
@@ -8,5 +10,7 @@
 
 //4 Layout
 @import "./Layout/header";
+@import "./Layout/footer";
 
 //5 Pages
+@import "./Pages/location.scss"

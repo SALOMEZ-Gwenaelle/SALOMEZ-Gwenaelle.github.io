@@ -1,0 +1,21 @@
+//la Localisation
+.location{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+        &__gps{
+            flex-direction: row;
+            &--city{
+                background-color: aqua;
+            }
+
+        }
+        &__title{
+            background-color: aquamarine;
+
+        }
+        &__button{
+            background-color: brown;
+            
+        }
+}

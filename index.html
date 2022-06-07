@@ -9,16 +9,80 @@
     </head>       
 
     <body>
-        <div id="main-container">
+        <div id="main-container" class="homepage">
             <!-- le header -->
             <header>
                 <h1 class="nav-title">
-                    
+                    <div class="nav-title__nav">
+                        <a href="/menu-1.html" class="nav-title__nav--back">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </div>
                     <div class="nav-title__logo">
                         <img src="images/logo/ohmyfood.png" alt="logo Oh My Food">
                     </div>                    
                 </h1>
             </header>
+            <!-- la localisation -->
+            <div class="location">
+                <div class="location__gps">
+                    <i class="fa-solid fa-location-dot"></i> 
+                    <p class="location__gps--city">
+                        Paris, Belleville
+                    </p>
+                </div>
+                <div class="location__title">
+                    <h2>
+                        Réservez le menu qui vous convient
+                    </h2>
+                    <p>
+                        Découvrez des restaurants d'exception, sélectionnés par nos soins
+                    </p>
+                </div>    
+                <div class="location__button">
+                    <form class="location__button-restaurant" method="post" action="#.php">
+                        <input id="bouton" type="submit" value="Explorer nos restaurants" />                                           
+                    </form>
+                </div>
+            </div> 
+            
+            
+
+
+
+            <footer>
+                <div class="footer-nav">
+                    <h3 class="footer-nav__title">
+                        ohmyfood
+                    </h3>
+                    <nav class="footer-nav__nav">
+                        <ul class="footer-nav__nav--list">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    Proposer un restaurant
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                    Devenir partenaire
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mentions légales
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@ohmyfood.fr">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
         </div>    
     </body>
 </html>

@@ -1,27 +1,32 @@
-.nav-title{
+.nav-title {
     width: 100%;
     display: flex;
     padding: 0 20px;
     margin: 0;
     justify-content: center;
     position: relative;
-        &__nav{
+        &__nav {
             display: flex;
             align-items: center;
             position: absolute;
             height: 100%;
             left: 20px;
             padding-top: 20px ;
-                &--back{
+                &--back {
                     color: black;
                     display: flex;
                     text-decoration: none;                    
                 }           
         }
-        &__logo{
+        &__logo {
             padding-top: 20px ;
-            & img{
+            img {
                 max-width: 65%;
             }
         }
+}
+.homepage {
+    .nav-title__nav {
+        display: none;
+    }
 }

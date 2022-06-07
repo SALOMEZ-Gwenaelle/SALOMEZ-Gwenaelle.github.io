@@ -12,51 +12,146 @@
         <div id="main-container" class="homepage">
             <!-- le header -->
             <header>
-                <h1 class="nav-title">
-                    <div class="nav-title__nav">
-                        <a href="/menu-1.html" class="nav-title__nav--back">
+                <h1 class="navtitle">
+                    <div class="navtitle__nav">
+                        <a href="/menu-1.html" class="navtitle__navback">
                             <i class="fa-solid fa-arrow-left"></i>
                         </a>
                     </div>
-                    <div class="nav-title__logo">
+                    <div class="navtitle__logo">
                         <img src="images/logo/ohmyfood.png" alt="logo Oh My Food">
                     </div>                    
                 </h1>
             </header>
             <!-- la localisation -->
-            <div class="location">
+            <section class="location">
+                <!-- gps -->
                 <div class="location__gps">
-                    <i class="fa-solid fa-location-dot"></i> 
-                    <p class="location__gps--city">
-                        Paris, Belleville
-                    </p>
+                    <form class="location__gpssearch" method="post" action="#.php">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input class="location__input" type="text" placeholder="Paris, Belleville" />
+                    </form>
                 </div>
+                <!-- Titre primary -->
                 <div class="location__title">
                     <h2>
                         Réservez le menu qui vous convient
                     </h2>
                     <p>
-                        Découvrez des restaurants d'exception, sélectionnés par nos soins
+                        Découvrez des restaurants d'exception, sélectionnés par nos soins.
                     </p>
-                </div>    
-                <div class="location__button">
-                    <form class="location__button-restaurant" method="post" action="#.php">
-                        <input id="bouton" type="submit" value="Explorer nos restaurants" />                                           
+                </div> 
+                <!-- Bouton search restaurant -->
+                <div class="location__buttoncontainer">
+                    <a href="#">Explorer nos restaurants</a>
+                </div>
+            </section>
+            <!-- le fonctionnement -->
+            <section class="choise-nav">
+                <h2 class="choise-nav__title" >
+                    Fonctionnement
+                </h2>
+                <div class="choise-nav__choise">
+                    <form class="choise-nav__choise--choise" method="post" action="#.php">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <input id="bouton" type="submit" value="Choisissez un restaurant" />                                           
+                    </form>
+                    <form class="choise-nav__choise--menu" method="post" action="#.php">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <input id="bouton" type="submit" value="Composez votre menu" />                                           
+                    </form>
+                    <form class="choise-nav__choise--gps" method="post" action="#.php">
+                        <i class="fa-solid fa-store"></i>
+                        <input id="bouton" type="submit" value="Dégustez au restaurant" />                                           
                     </form>
                 </div>
-            </div> 
+            </section>
+            <!-- les restaurants -->
+            <article class="list-menu">
+                <h2 class="list-menu__title">
+                    Restaurants
+                </h2>
+                <div class="list-menu__menu1">
+                    <a href="menu-1.html">
+                        <div>
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
+                        </div>
+                        <div>
+                            <h3>
+                                La palette du goût
+                            </h3>
+                            <h4>
+                                Ménilmontant
+                            </h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="list-menu__menu2">
+                    <a href="menu-2.html">
+                        <div>
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant">
+                        </div>
+                        <div>
+                            <h3>
+                                La note enchantée
+                            </h3>
+                            <h4>
+                                Charonne
+                            </h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="list-menu__menu3">
+                    <a href="menu-3.html">
+                        <div>
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant">
+                        </div>
+                        <div>
+                            <h3>
+                                À la française
+                            </h3>
+                            <h4>
+                                Cité Rouge
+                            </h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="list-menu__menu4">
+                    <a href="menu-4.html">
+                        <div>
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant">
+                        </div>
+                        <div>
+                            <h3>
+                                Le délice des sens
+                            </h3>
+                            <h4>
+                                Folie-Méricourt
+                            </h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        
+                    </a>
+                </div>
+            </article>
             
             
 
 
-
+            <!-- le footer -->
             <footer>
-                <div class="footer-nav">
-                    <h3 class="footer-nav__title">
+                <div class="footernav">
+                    <h3 class="footernav__title">
                         ohmyfood
                     </h3>
-                    <nav class="footer-nav__nav">
-                        <ul class="footer-nav__nav--list">
+                    <nav class="footernav__nav">
+                        <ul class="footernav__navlist">
                             <li>
                                 <a href="#">
                                     <i class="fa-solid fa-utensils"></i>
@@ -82,7 +177,7 @@
                         </ul>
                     </nav>
                 </div>
-            </footer>
+            </footer> 
         </div>    
     </body>
 </html>

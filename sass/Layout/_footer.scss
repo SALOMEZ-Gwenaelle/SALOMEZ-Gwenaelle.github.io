@@ -1,4 +1,4 @@
-.footer-nav{
+.footernav{
     background-color: #353535;
     color: white;
     width: 100%;
@@ -12,7 +12,7 @@
         }
         &__nav {
             font-family: $font-text;
-                &--list {
+                &list {
                 padding-left: 20px;
                 margin: 0;
                     a {

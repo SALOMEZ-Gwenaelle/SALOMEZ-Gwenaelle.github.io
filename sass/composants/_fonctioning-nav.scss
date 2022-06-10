@@ -1,0 +1,55 @@
+.functioning-nav__choice {
+    margin: 0 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    font-family: $font-text;
+    
+
+    &:hover {
+        .functioning-nav__choiceli {
+            color: $color-primary;
+        }
+        .functioning-nav__choicebtn {
+            background-color: lighten($color-primary,36%);
+            box-shadow: 0px 5px 6px #AAA;
+        }
+    }
+
+    &btn {
+        border-radius: 15px;
+        background-color: #f6f6f6;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 12px);
+        margin: 0;
+        padding: 0 0 0 15px;
+        font-weight: 600;
+        box-shadow: 0px 5px 6px #DDD;
+        transition: background-color 400ms, box-shadow 400ms;
+    }
+
+    &nb {
+        position: absolute;
+        left: 0;
+        top: calc(50% - 12px);
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: white;
+        display: flex;
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    &li {
+        display: block;
+        width: 75px;
+        text-align: center;
+        font-size: 20px;
+        color: #7e7e7e;
+    }
+}

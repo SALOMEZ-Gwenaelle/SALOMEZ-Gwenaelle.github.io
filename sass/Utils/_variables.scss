@@ -6,3 +6,27 @@ $color-tertiary: #99E2D0;
 // les polices
 $font-logo: Shrikhand;
 $font-text: roboto;
+
+// taille des titres
+$font-size-title: 30px;
+
+@mixin title () {
+    font-weight: 700;
+    font-size: $font-size-title;
+}
+
+@mixin btn () {
+    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 35px;
+    box-shadow: 0px 5px 6px #929090;
+    filter: brightness(1);
+    transition: filter 400ms, box-shadow 400ms;
+}
+    
+@mixin btn-hover () {
+    filter: brightness(1.1);
+    box-shadow: 0px 5px 6px #333333;
+}

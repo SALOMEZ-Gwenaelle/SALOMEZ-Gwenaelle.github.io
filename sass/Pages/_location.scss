@@ -1,5 +1,5 @@
 //la Localisation
-.location{
+.location {
     width: 100%;
     display: flex;
     margin: 0;
@@ -8,7 +8,7 @@
     flex-direction: column;
     font-family: $font-text;
         // GPS
-        &__gps{
+        &__gps {
             display: flex;
             flex-direction: row;
             width: 100%;
@@ -32,11 +32,11 @@
                 font-weight: 700;
                 opacity: 0.9;
             }
-        &gpssearch {
+        }      
+        &__gpssearch {
             display: block;
             text-align: center;
         }
-        }        
         // titre primary
         &__title{
             display: flex;
@@ -45,9 +45,8 @@
             width: 100%;
             background-color: #f6f6f6;
             h2 {
+                @include title;
                 margin: 45px 0 15px 0;
-                font-weight: 700;
-                font-size: 30px;
                 width: 70%;
                 text-align: center;
             }
@@ -57,24 +56,7 @@
                 margin-bottom: 25px;
                 font-size: 20px;
                 opacity: 0.7;
-
             }
 
-        }
-        &__buttoncontainer {
-            width: 100%;
-            text-align: center;
-            background-color: #f6f6f6;
-            padding: 20px 0 80px 0;
-            a {
-                background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-                color: white;
-                font-size: 20px;
-                padding: 15px 30px;
-                border-radius: 35px;
-            }
-            
-            
-            
         }
 }

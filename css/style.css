@@ -347,6 +347,76 @@ template {
   padding: 0;
 }
 
+.functioning-nav__choice {
+  margin: 0 20px 30px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  font-family: roboto;
+}
+.functioning-nav__choice:hover .functioning-nav__choiceli {
+  color: #9356DC;
+}
+.functioning-nav__choice:hover .functioning-nav__choicebtn {
+  background-color: #f4eefc;
+  box-shadow: 0px 5px 6px #AAA;
+}
+.functioning-nav__choicebtn {
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 12px);
+  margin: 0;
+  padding: 0 0 0 15px;
+  font-weight: 600;
+  box-shadow: 0px 5px 6px #DDD;
+  transition: background-color 400ms, box-shadow 400ms;
+}
+.functioning-nav__choicenb {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 12px);
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+}
+.functioning-nav__choiceli {
+  display: block;
+  width: 75px;
+  text-align: center;
+  font-size: 20px;
+  color: #7e7e7e;
+}
+
+.location__buttoncontainer {
+  width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 20px 0 80px 0;
+}
+.location__buttoncontainer a {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 35px;
+  box-shadow: 0px 5px 6px #929090;
+  filter: brightness(1);
+  transition: filter 400ms, box-shadow 400ms;
+}
+.location__buttoncontainer a:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 5px 6px #333333;
+}
+
 .navtitle {
   width: 100%;
   display: flex;
@@ -445,7 +515,7 @@ template {
   font-weight: 700;
   opacity: 0.9;
 }
-.location__inputgpssearch {
+.location__gpssearch {
   display: block;
   text-align: center;
 }
@@ -457,9 +527,9 @@ template {
   background-color: #f6f6f6;
 }
 .location__title h2 {
-  margin: 45px 0 15px 0;
   font-weight: 700;
   font-size: 30px;
+  margin: 45px 0 15px 0;
   width: 70%;
   text-align: center;
 }
@@ -470,18 +540,16 @@ template {
   font-size: 20px;
   opacity: 0.7;
 }
-.location__buttoncontainer {
-  width: 100%;
-  text-align: center;
-  background-color: #f6f6f6;
-  padding: 20px 0 80px 0;
+
+.functioning-nav {
+  padding-top: 15px;
 }
-.location__buttoncontainer a {
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
-  color: white;
-  font-size: 20px;
-  padding: 15px 30px;
-  border-radius: 35px;
+
+.functioning-nav__title {
+  width: 100%;
+  display: flex;
+  margin: 25px 20px;
+  font-family: roboto;
 }
 
 /*# sourceMappingURL=style.css.map */

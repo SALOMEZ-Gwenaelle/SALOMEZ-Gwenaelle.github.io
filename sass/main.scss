@@ -1,16 +1,19 @@
 //1 Utils
-@import "./Utils/imports";
-@import "./Utils/variables";
+@import "./utils/imports";
+@import "./utils/variables";
 
 //2 Base
-@import "./Base/normalize"; 
-@import "./Base/base";
+@import "./base/normalize"; 
+@import "./base/base";
 
 //3 Composants
+@import "./composants/fonctioning-nav";
+@import "./composants/btn";
 
 //4 Layout
-@import "./Layout/header";
-@import "./Layout/footer";
+@import "./layout/header";
+@import "./layout/footer";
 
 //5 Pages
-@import "./Pages/location.scss"
+@import "./pages/location";
+@import "./pages/functioning";

@@ -1,7 +1,7 @@
 .location__buttoncontainer {
     width: 100%;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: $color-back;
     padding: 20px 0 80px 0;
     a {
         @include btn;

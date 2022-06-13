@@ -2,6 +2,8 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-back: #f6f6f6;
+$gradient: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
 
 // les polices
 $font-logo: Shrikhand;
@@ -15,8 +17,12 @@ $font-size-title: 30px;
     font-size: $font-size-title;
 }
 
+@mixin gradient () {
+
+}
+
 @mixin btn () {
-    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+    background: $gradient;
     color: white;
     font-size: 20px;
     padding: 15px 30px;

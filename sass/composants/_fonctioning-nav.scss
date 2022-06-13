@@ -18,7 +18,7 @@
 
     &btn {
         border-radius: 15px;
-        background-color: #f6f6f6;
+        background-color: $color-back;
         height: 75px;
         display: flex;
         align-items: center;
@@ -51,5 +51,11 @@
         text-align: center;
         font-size: 20px;
         color: #7e7e7e;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .functioning-nav__choice {
+        flex: 1;
     }
 }

@@ -1,4 +1,7 @@
-.footernav{
+footer {
+    background-color: #353535;
+}
+.footernav {
     background-color: #353535;
     color: white;
     width: 100%;
@@ -17,19 +20,39 @@
                 margin: 0;
                     a {
                         color: white;
-                        // display: flex;
                     }
                     li {
                         padding-bottom: 10px;
-                        
                     }
                     i {
-                        // display: flex;
                         height: 20px;
                         width: 20px;
                     }
-               
             }
-            
         }
+}
+
+@media all and (min-width: 1024px) {
+    .footernav {
+        max-width: 1024px;
+        margin: 0 auto;
+        height: 120px;
+
+        &__title {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+        
+        &__nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 30px;
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
 }

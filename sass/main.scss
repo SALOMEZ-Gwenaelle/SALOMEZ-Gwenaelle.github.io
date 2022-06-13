@@ -9,6 +9,9 @@
 //3 Composants
 @import "./composants/fonctioning-nav";
 @import "./composants/btn";
+@import "./composants/list-menu-tile";
+@import "./composants/btn-favorites";
+@import "./composants/tag";
 
 //4 Layout
 @import "./layout/header";
@@ -17,3 +20,4 @@
 //5 Pages
 @import "./pages/location";
 @import "./pages/functioning";
+@import "./pages/restaurant";

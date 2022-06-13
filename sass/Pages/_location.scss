@@ -43,7 +43,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            background-color: #f6f6f6;
+            background-color: $color-back;
             h2 {
                 @include title;
                 margin: 45px 0 15px 0;

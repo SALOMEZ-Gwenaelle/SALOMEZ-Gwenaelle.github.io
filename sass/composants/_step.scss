@@ -1,0 +1,9 @@
+.menu__step {
+    padding-bottom: 40px;
+}
+
+@media all and (min-width: 1024px) {
+    .menu__step {
+        width: 33.33%;
+    }
+}

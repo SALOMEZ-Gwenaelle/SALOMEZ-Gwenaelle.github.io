@@ -3,27 +3,40 @@
     border: 0;
     background-color: transparent;
 
+    i {
+        font-size: x-large;
+        padding: 10px 10px;
+    }
+
     .fa-regular {
         position: relative;
         color: #000;
-        transition: color 400ms;
+        transition: all 400ms;
     }
     .fa-solid {
+        color: transparent;
         right: 0;
         position: absolute;
         opacity: 0;
-        transition: opacity 400ms;
+        transition: all 400ms;
+        background: $gradient;
+        -webkit-background-clip: text;
     }
     &:hover {
         cursor: pointer;
         .fa-regular {
             color: transparent;
+            transition: all 400ms;
         }
         .fa-solid {
-            background: $gradient;
-            -webkit-background-clip: text;
-            color: transparent;
             opacity: 1;
+            transition: all 400ms;
         }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .list-menu__tilefav {
+        margin-left: 15px;
     }
 }

@@ -356,7 +356,7 @@ template {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  font-family: roboto;
+  font-family: roboto, Arial, Helvetica, sans-serif;
 }
 .functioning-nav__choice:hover .functioning-nav__choiceli {
   color: #9356DC;
@@ -420,18 +420,29 @@ template {
   box-shadow: 0px 5px 6px #929090;
   filter: brightness(1);
   transition: filter 400ms, box-shadow 400ms;
+  font-family: roboto, Arial, Helvetica, sans-serif;
 }
 .location__buttoncontainer a:hover {
   filter: brightness(1.1);
   box-shadow: 0px 5px 6px #333333;
 }
 
+@media all and (min-width: 1024px) {
+  *:not(.homepage) .location__buttoncontainer {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
 .list-menu__tile {
   background-color: white;
   border-radius: 20px;
   color: black;
   margin-bottom: 20px;
   position: relative;
+  box-shadow: 0px 5px 6px #ddd;
+}
+.list-menu__tile:hover {
+  box-shadow: 0px 5px 6px #AAA;
 }
 .list-menu__tile img {
   width: 100%;
@@ -474,30 +485,41 @@ template {
   border: 0;
   background-color: transparent;
 }
+.list-menu__tilefav i {
+  font-size: x-large;
+  padding: 10px 10px;
+}
 .list-menu__tilefav .fa-regular {
   position: relative;
   color: #000;
-  transition: color 400ms;
+  transition: all 400ms;
 }
 .list-menu__tilefav .fa-solid {
+  color: transparent;
   right: 0;
   position: absolute;
   opacity: 0;
-  transition: opacity 400ms;
+  transition: all 400ms;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
 }
 .list-menu__tilefav:hover {
   cursor: pointer;
 }
 .list-menu__tilefav:hover .fa-regular {
   color: transparent;
+  transition: all 400ms;
 }
 .list-menu__tilefav:hover .fa-solid {
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  color: transparent;
   opacity: 1;
+  transition: all 400ms;
 }
 
+@media all and (min-width: 1024px) {
+  .list-menu__tilefav {
+    margin-left: 15px;
+  }
+}
 .list-menu__tag {
   display: flex;
   justify-content: center;
@@ -513,6 +535,92 @@ template {
   box-shadow: 0px 2px 5px #333;
 }
 
+.menu__stepinfo {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 12px rgb(219, 219, 219);
+  margin: 20px 17px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu__stepinfo .menu__stepcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 60px);
+  flex: 1;
+}
+.menu__stepinfo .menu__steptext {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  padding: 10px 0 10px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__stepinfo .menu__steptext h4 {
+  font-size: larger;
+  font-weight: 700;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__stepinfo .menu__steptext p {
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__stepinfo .menu__stepprice {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 20px 10px 0;
+}
+.menu__stepinfo .menu__stepvalidation {
+  display: flex;
+  background-color: #99E2D0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.menu__stepinfo .menu__stepvalidation i {
+  opacity: 0;
+  transform: rotate(360deg);
+  transition: all 0.4s;
+}
+.menu__stepinfo:hover {
+  cursor: pointer;
+}
+.menu__stepinfo:hover .menu__stepvalidation {
+  width: 60px;
+}
+.menu__stepinfo:hover .menu__stepvalidation i {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.menu__steptitle {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+.menu__step {
+  padding-bottom: 40px;
+}
+
+@media all and (min-width: 1024px) {
+  .menu__step {
+    width: 33.33%;
+  }
+}
 .navtitle {
   width: 100%;
   display: flex;
@@ -559,12 +667,12 @@ footer {
 .footernav__title {
   padding: 20px;
   margin: 0;
-  font-family: Shrikhand;
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
 }
 .footernav__nav {
-  font-family: roboto;
+  font-family: roboto, Arial, Helvetica, sans-serif;
 }
 .footernav__navlist {
   padding-left: 20px;
@@ -601,14 +709,59 @@ footer {
     margin: 0 auto;
   }
 }
+.menu {
+  background-color: #f6f6f6;
+}
+
+.menu__header {
+  background-color: #f6f6f6;
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  margin-top: -40px;
+  padding: 30px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__header .menu__title {
+  display: flex;
+  align-items: center;
+}
+
+@media all and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+    margin: -10px auto 0;
+  }
+
+  .menu__header {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.image-backg {
+  margin-top: 10px;
+}
+.image-backg img {
+  width: 100%;
+  object-fit: cover;
+  height: 260px;
+}
+
 .location {
+  background-color: #f6f6f6;
   width: 100%;
   display: flex;
   margin: 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: roboto;
+  font-family: roboto, Arial, Helvetica, sans-serif;
 }
 .location__gps {
   display: flex;
@@ -669,7 +822,7 @@ footer {
   width: auto;
   display: flex;
   margin: 25px 20px;
-  font-family: roboto;
+  font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
 }
@@ -691,7 +844,7 @@ footer {
   padding: 60px 20px 30px;
   display: flex;
   flex-direction: column;
-  font-family: roboto;
+  font-family: roboto, Arial, Helvetica, sans-serif;
   background-color: #f6f6f6;
   width: 100%;
 }

@@ -1,0 +1,82 @@
+.menu__stepinfo {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgb(219, 219, 219);
+    margin: 20px 17px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .menu__stepcontainer {
+        display: flex;
+        justify-content: space-between;   
+        width: calc(100% - 60px);
+        flex: 1;
+    }
+
+    .menu__steptext {
+        font-family: $font-text;
+        padding: 10px 0 10px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        h4 {
+            font-size: larger;
+            font-weight: 700;
+            padding-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }        
+    }
+
+    .menu__stepprice {
+        font-family: $font-text;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 20px 10px 0;
+        
+
+    }
+
+    .menu__stepvalidation {
+        display: flex;
+        background-color: $color-tertiary;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        width: 0px;
+        border-radius: 0 15px 15px 0;
+        font-size: 20px;
+        transition: all 0.4s;
+
+        i {
+            opacity: 0;
+            transform: rotate(360deg);
+            transition: all 0.4s;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .menu__stepvalidation {
+            width: 60px;
+
+            i {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+        }
+    }
+}

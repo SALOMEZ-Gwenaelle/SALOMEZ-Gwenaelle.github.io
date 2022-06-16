@@ -12,10 +12,16 @@
 @import "./composants/list-menu-tile";
 @import "./composants/btn-favorites";
 @import "./composants/tag";
+@import "./composants/stepinfo";
+@import "./composants/steptitle";
+@import "./composants/step";
+@import "./composants/spinner";
 
 //4 Layout
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/menu-header";
+@import "./layout/imgbackground";
 
 //5 Pages
 @import "./pages/location";

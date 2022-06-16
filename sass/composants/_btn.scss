@@ -3,11 +3,19 @@
     text-align: center;
     background-color: $color-back;
     padding: 20px 0 80px 0;
+    
     a {
         @include btn;
 
         &:hover {
             @include btn-hover;
         }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    *:not(.homepage) .location__buttoncontainer {
+        max-width: 1024px;
+        margin: 0 auto;
     }
 }

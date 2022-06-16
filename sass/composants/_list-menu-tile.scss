@@ -4,6 +4,13 @@
     color: black;
     margin-bottom: 20px;
     position: relative;
+    box-shadow: 0px 5px 6px #ddd;
+
+    &:hover {
+        
+            box-shadow: 0px 5px 6px #AAA;
+        
+    }
 
     img {
         width: 100%;

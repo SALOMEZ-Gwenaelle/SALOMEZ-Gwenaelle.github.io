@@ -1,0 +1,25 @@
+
+@for $i from 1 through 4 {
+    .menu__steplist li:nth-child(1n + #{$i}) {
+        animation-delay: $i * 300ms;
+    }
+}
+.menu__steplist {
+    li {
+        opacity: 0;
+        animation: stepinfoanimation 1000ms forwards;
+        // overflow: hidden;
+    }
+}
+
+@keyframes stepinfoanimation {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
